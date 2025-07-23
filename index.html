@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="shortcut icon" href="image stocks/musical-note.png" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/mediaquery.css">
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="left-box">
+            <h5 class="heading">Deepak Menu</h5>
+            <div class="close">
+                <img width="30" src="close.svg" alt="">
+            </div>
+            <ul class="first-ul">
+                <li>
+                    <div class="left-list">
+                        <img src="image stocks/home.png" alt="">
+                        <p>Home</p>
+                    </div>
+
+                </li>
+                <li>
+                    <div class="left-list">
+                        <img src="image stocks/category.png" alt="">
+                        <p>Categories</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="left-list">
+                        <img src="image stocks/user.png" alt="">
+                        <p>Artist</p>
+                    </div>
+                <li>
+                    <div class="left-list">
+                        <img src="image stocks/playlist.png" alt="">
+                        <label for="playlist">Playlists</label>
+
+                    </div>
+                </li>
+            </ul>
+            <div class="playlist-item" style="font-size: 14px !important;">
+                <ul>
+                  
+                </ul>
+
+            </div>
+            <footer class="left-box-footer">
+                <div class="left-list">
+                    <img src="image stocks/logout.png" alt="">
+                    Logout
+                </div>
+            </footer>
+        </div>
+        <div class="right-box">
+            
+            <nav class="navbar">
+                <div class="hamburger">
+                    <img src="hamburger.png" alt="">
+                </div>
+                <div class="search-box">
+                    <input type="search" placeholder="Search for a song...">
+                    <img src="image stocks/search-interface-symbol.png" alt="">
+                </div>
+                <div class="navleft">
+                    <div class="user">
+                        <img src="image stocks/profile.png" alt="">
+                        <p>Admin</p>
+                    </div>
+                    <div class="lstimg">
+                        <img src="image stocks/heart.png" alt="">
+                        <img src="image stocks/setting.png" alt="">
+                    </div>
+
+                </div>
+            </nav>
+
+            <div class="first-grid slider">
+                <img src="image stocks/Gallary/adler-2386314_1280.jpg" alt="" class="slide left-5">
+                <img src="image stocks/Gallary/animals-4679390_1280.jpg" alt="" class="slide left-4">
+                <img src="image stocks/Gallary/camel-cart-6564830_1280.jpg" alt="" class="slide left-3">
+                <img src="image stocks/Gallary/bachalpsee-7572681_1280.jpg" alt="" class="slide left-2">
+                <img src="image stocks/Gallary/boat-7618814_1280.jpg" alt="" class="slide left-1">
+                <img src="image stocks/Gallary/arch-7470764_1280.jpg" alt="" class="slide center">
+                <img src="image stocks/Gallary/christmas-tree-5819465_1280.jpg" alt="" class="slide right-1">
+                <img src="image stocks/Gallary/desktop-5636733_1280.jpg" alt="" class="slide right-2">
+                <img src="image stocks/Gallary/fishing-boat-5736839_1280.jpg" alt="" class="slide right-3">
+                <img src="image stocks/Gallary/boat-7618814_1280.jpg" alt="" class="slide right-4">
+                <img src="image stocks/Gallary/lion-3576045_1280.jpg" alt="" class="slide right-5">
+                <div class="para-on-img">
+                    <div class="playing-song">
+                        <p class="1">Deepak</p>
+                        <p class="2" style="font-size: 10px !important;">Prajapati</p>
+                    </div>
+                    <img src="image stocks/play-button.png" alt="">
+                </div>
+            </div>
+            <div class="box grid">
+                <h4>Select Categories</h4>
+                <div class="slider-arrow">
+                    <img src="image stocks/left-chevron.png" alt="">
+                    <img src="image stocks/chevron.png" alt="">
+                </div>
+            </div>
+            <div class="box ">
+                <button class="category" data-folder="All" type="button" id="cat-btn">All</button>
+                <button class="category" data-folder="Relax" type="button" id="cat-btn">Relax</button>
+                <button class="category" data-folder="Sad" type="button" id="cat-btn">Sad</button>
+                <button class="category" data-folder="Party" type="button" id="cat-btn">Party</button>
+                <button class="category" data-folder="Romance" type="button" id="cat-btn">Romance</button>
+                <button class="category" data-folder="Energetic" type="button" id="cat-btn">Energetic</button>
+                <button class="category" data-folder="Relaxing" type="button" id="cat-btn">Relaxing</button>
+                <button class="category" data-folder="Jazz" type="button" id="cat-btn">Jazz</button>
+                <button class="category" data-folder="Alternative" type="button" id="cat-btn">Alternative</button>
+            </div>
+            <div class="box grid">
+                <h4>Popular Singers</h4>
+                <div class="slider-arrow">
+                    <img src="image stocks/left-chevron.png" alt="">
+                    <img src="image stocks/chevron.png" alt="">
+                </div>
+            </div>
+            <div class="box">
+                <div class="gridfirstbox category" data-folder="ArijitSingh">
+                    <img src="image stocks/Singers/Arijit Singh.webp" alt="">
+                    <div class="title">Arijit Singh</div>
+                    <div class="sub-title">Composer</div>
+                </div>
+                <div class="gridfirstbox category" data-folder="ShreyaGhoshle">
+                    <img src="image stocks/Singers/Shraya Ghoshle.jpeg" alt="">
+                    <div class="title">Shreya Ghoshle</div>
+                    <div class="sub-title">Actor</div>
+                </div>
+                <div class="gridfirstbox category" data-folder="UditNarayanJha">
+                    <img src="image stocks/Singers/Udit Narayan Jha.webp" alt="">
+                    <div class="title">Udit Narayan Jha</div>
+                    <div class="sub-title">Actor</div>
+                </div>
+                <div class="gridfirstbox category" data-folder="MohammadRafi">
+                    <img src="image stocks/Singers/Mohammad Rafi.jpg" alt="">
+                    <div class="title">Mohammad Rafi</div>
+                    <div class="sub-title">Composer</div>
+                </div>
+                <div class="gridfirstbox category" data-folder="SonuNigam">
+                    <img src="image stocks/Singers/Sonu Nigam.jpg" alt="">
+                    <div class="title">Sonu Nigam</div>
+                    <div class="sub-title">PlayBack Singer</div>
+                </div>
+                <div class="gridfirstbox category" data-folder="KishoreKumar">
+                    <img src="image stocks/Singers/Kishore Kumar.jpg" alt="">
+                    <div class="title">Kishore Kumar</div>
+                    <div class="sub-title">Lyricist</div>
+                </div>
+                <div class="gridfirstbox category" data-folder="LataMangeshkar">
+                    <img src="image stocks/Singers/Lata Mangeshkar.webp" alt="">
+                    <div class="title">Lata Mangeshkar</div>
+                    <div class="sub-title">Producer</div>
+                </div>
+                <div class="gridfirstbox category" data-folder="AlkaYagnik">
+                    <img src="image stocks/Singers/Alka Yagnik.png" alt="">
+                    <div class="title">Alka Yagnik</div>
+                    <div class="sub-title">Composer</div>
+                </div>
+                <div class="gridfirstbox category" data-folder="AtifAsalam">
+                    <img src="image stocks/Singers/Atif Asalm.jpeg" alt="">
+                    <div class="title">Atif Aslam</div>
+                    <div class="sub-title">Singer</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="body-footer">
+        <div class="song-name">
+            <img src="image stocks/musical-note.png" alt="">
+            <div class="song-para">
+                <div class="title songtitle" style="font-size: 12px !important;"></div>
+                <div class="sub-title" style="font-size: 12px !important;"></div>
+            </div>
+        </div>
+        <div class="play-fun">
+            <img id="pre" src="image stocks/previous.png" alt="">
+            <img id="play" src="image stocks/play.png" alt="">
+            <img id="next" src="image stocks/next-button.png" alt="">
+        </div>
+        <div class="songtime"></div>
+        <div class="seekbar">
+            <div class="dot"></div>
+        </div>
+        <div class="footer-right">
+            <img id="heart" src="image stocks/heart.png" alt="">
+            <img src="image stocks/random.png" alt="">
+            <img src="image stocks/repeat.png" alt="">
+            <div class="range">
+                <img id="volume" src="volume.png" alt="">
+                <input id="volumeslider" type="range" name="volume" id="">
+            </div>
+
+        </div>
+    </footer>
+    <script src="JS/script.js"></script>
+</body>
+
+</html>
