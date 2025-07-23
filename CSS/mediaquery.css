@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @media (max-width:1365px){
     .left-box{
         position: absolute;
@@ -30,4 +31,38 @@
     .close{
         display: block;
     }
+=======
+@media (max-width:1365px){
+    .left-box{
+        position: absolute;
+        left: -120%;
+        transition: all .3s;
+        z-index: 51;
+        width: 358px;
+        height:85vh;
+    }
+    .right-box{
+        width: 100vw;
+    }
+    .body-footer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100vw;
+    }
+    .hamburger{
+        display: block;
+    }
+    .lstimg img {
+        width: 10px;
+        padding: 6px 6px;
+    }
+    .footer-right{
+        display: flex;
+    flex-wrap: wrap;
+    }
+    .close{
+        display: block;
+    }
+>>>>>>> 43332b9 (Added large song files using git lfs)
 }
